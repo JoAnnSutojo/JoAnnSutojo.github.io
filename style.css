@@ -1,0 +1,194 @@
+/***** VARIABLES *****/
+:root {
+    /***** COLOR *****/
+    --cyber-yellow: #ffd100;
+    --aureolin: #ffee32;
+    --white: #ffffff;
+    --light-gray: #d6d6d6;
+    --jet: #333533;
+    --eerie-black: #202020;
+
+    --baby-powder: #fffcf9;
+    --piggy-pink: #ffe3ef;
+    --usafa-blue: #26547c;
+    --onyx: #393d3f;
+    --smoky-black: #140800;
+
+    /***** FONT *****/
+    --heading-font: 'Montserrat', sans-serif;
+}
+
+/***** RESET *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/***** UTILITY *****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    border: 8px solid var(--jet);
+    background-color: var(--jet);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+section {
+    width: 100%;
+    /*
+    float: left;
+    */
+    height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    padding: 2em 1em; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*PAGE TITLE*/
+
+.page-title-frame {
+    width: 150px;
+    height: 62px;
+    border: 2px solid var(--aureolin);
+    margin: 0 auto;
+    position: relative;
+}
+
+.page-title {
+    font-size: 20px;
+    position: absolute;
+    left: -30px;
+    top: 8px;
+    background-color: var(--jet);
+}
+
+
+/***** HOME PAGE *****/
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border: 2px solid var(--aureolin);
+    color: var(--aureolin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0.25em;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    font-family: var(--heading-font);
+    padding-left: 1em;
+}
+
+header nav ul li a {
+    color: var(--white);
+}
+
+.flex-end-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.border-frame {
+    width: 260px;
+    height: 200px;
+    border: 6px solid var(--aureolin);
+    position: relative;
+}
+
+.main-heading-container {
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    background-color: var(--jet);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+h1, h2 {
+    margin: 10px 0px;
+}
+
+.text-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-container p {
+    width: 260px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--white);
+    margin-top: 1em;
+}
+
+span {
+    font-weight: 800;
+    color: var(--aureolin);
+}
+
+/***** ABOUT PAGE *****/
+.about-photo {
+    width: 200px;
+    height: 200px;
+    border: 6px solid var(--aureolin);
+    background-image: url(./Images/28620059384_542566317f_o.JPG);
+    background-size: cover;
+    background-position: top 30% center;
+    margin-bottom: 2em;
+}
+
+.about-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2em;
+    text-align: justify;
+}
+
+/***** WORK/PORTFOLIO PAGE *****/
+
+
+
+/***** CONTACT PAGE *****/

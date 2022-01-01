@@ -113,17 +113,30 @@ header nav ul li a {
     color: var(--white);
 }
 
-.flex-end-container {
+/*
+.flex-start-container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
+*/
 
-.border-frame {
-    width: 260px;
+.main-heading-frame {
+    width: 240px;
     height: 200px;
     border: 6px solid var(--aureolin);
     position: relative;
+}
+
+.main-heading-frame::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 6px solid var(--aureolin);
+    background-color: var(--aureolin);
+    bottom: -6px;
+    right: -35px;
 }
 
 .main-heading-container {
@@ -150,13 +163,13 @@ h1, h2 {
     margin: 10px 0px;
 }
 
-.text-container {
+.main-text-container {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.text-container p {
+.main-text-container p {
     width: 260px;
     font-size: 16px;
     font-weight: 300;

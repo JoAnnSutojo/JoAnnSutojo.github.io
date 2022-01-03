@@ -101,6 +101,11 @@ section {
     background-color: var(--jet);
 }
 
+.page-intro {
+    color: var(--aureolin);
+    font-size: 14px;
+}
+
 /*SCROLL DOWN ARROWS*/
 
 .arrows {

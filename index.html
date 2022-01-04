@@ -18,9 +18,9 @@
         <header>
             <nav>
                 <a href="#home">
-                    <div class="logo">JS</div>
+                    <div class="logo flex center">JS</div>
                 </a>
-                <ul>
+                <ul class="flex">
                     <li>
                         <a href="#about">About</a>
                     </li>
@@ -34,48 +34,47 @@
             </nav>
         </header>
         <div class="main-container">
-            <div class="main-heading-frame">
-                <div class="main-heading-text">
+            <div class="mainHeading-frame">
+                <div class="mainHeading-text">
                     <h1>Hello.</h1>
                     <h2>I'm <span>Jo Ann<span></h2>      
                 </div>
             </div>
-            <div class="second-heading-container">
-                <div class="second-heading-text">
+            <div class="secondHeading-container">
+                <div class="secondHeading-text">
                     <p>I'm a <span>Full-Stack Web Developer</span>, based in <span>Hamburg</span>.</p>
                 </div>
             </div>
+            <div class="contactMe-button flex center">
+                <a href="#work">Contact me!</a>
+            </div>
+            <div class="scrollDown flex center">
+                <svg class="arrows">
+                    <!--
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path> 
+                    -->
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>  
+            </div>
         </div>
-        <div class="contactMe-button">
-            <a href="#work">Contact me!</a>
-        </div>
-        <svg class="arrows">
-            <!--
-            <path class="a1" d="M0 0 L30 32 L60 0"></path> 
-            -->
-            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-            <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>  
     </section>
-
     <section id="about">
-        <div class="page-title-frame">
-            <h3 class="page-title">About Me</h3>
-        </div>
         <div class="main-container">
-            <p class="page-intro">Hi, i'm Jo Ann. Nice to meet you.</p>
+            <h3 class="pageTitle">About Me</h3>
+            <div class="pageTitle-bar black"></div>
+            <p class="pageIntro">Hi, i'm Jo Ann. Nice to meet you.</p>
             <div class="about-photo">
             </div>
             <p class="about-text">I'm baby viral craft beer banjo locavore, farm-to-table bicycle rights jean shorts. Semiotics ethical before they sold out chartreuse four loko street art, marfa echo park woke venmo. Organic cronut pok pok coloring book listicle aesthetic swag, 8-bit taiyaki chartreuse retro. Banh mi hot chicken roof party put a bird on it pinterest, tote bag poutine meditation taiyaki brunch kitsch dreamcatcher.</p>
         </div>
         
     </section>
-    <section id="work">
-        <div class="page-title-frame">
-            <h3 class="page-title">My Portfolio</h3>
-        </div>
+    <section id="work">  
         <div class="main-container">
-            <p class="page-intro"> Here are a few projects i've worked on recently.</p>
+            <h3 class="pageTitle">My Portfolio</h3>
+            <div class="pageTitle-bar black"></div>
+            <p class="pageIntro"> Here are a few projects i've worked on recently.</p>
         </div>
         <div class="photo-gallery">
             <div class="photo-container">
@@ -92,19 +91,17 @@
             </div>
         </div>
     </section>
-
     <section id="contact">
-        <div class="page-title-frame">
-            <h3 class="page-title">Get In Touch</h3>
-        </div>
         <div class="main-container">
-            <p class="page-intro">Have a question or want to work together?</p>
+            <h3 class="pageTitle">Get In Touch</h3>
+            <div class="pageTitle-bar white"></div>
+            <p class="pageIntro highlight">Have a question or want to work together?</p>
             <form action="https://formspree.io/f/xvolobvy" method="post">
-                <div class="form-group">
+                <div>
                     <label for="name"></label>
                     <input type="text" name="name" id="name" placeholder="Name" maxlength="100" required>
                 </div>
-                <div class="form-group">
+                <div>
                     <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="Enter Email"  required>
                 </div>
@@ -115,8 +112,7 @@
             </form>
         </div>
     </section>
-
-    <footer class="flex column center">
+    <footer class="flex center">
         <a class="scrollUp-button" href="#">
             <svg class="arrows-up">
                 <path d="M0 20 L20 0 L40 20"></path>
@@ -124,30 +120,30 @@
             </svg>
         </a>
         <div class="socNetwork flex center">
-            <a href="https://codepen.io/joAnnSutojo">
+            <a target="_blank" href="https://www.linkedin.com/in/jo-ann-sutojo-67291495/">
                 <div class="socNetwork-icon flex center">
                     <i class="fab fa-linkedin-in"></i>
                 </div>
             </a>
-             <a href="https://www.facebook.com/apintofjo">
+             <a target="_blank" href="https://www.facebook.com/apintofjo">
                 <div class="socNetwork-icon flex center">
                     <i class="fab fa-facebook-f"></i>
                 </div>
             </a>
-            <a href="https://www.instagram.com/apintofjo/">
+            <a target="_blank" href="https://www.instagram.com/apintofjo/">
                 <div class="socNetwork-icon flex center ">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/jo-ann-sutojo-67291495/">
+            <a target="_blank" href="https://codepen.io/joAnnSutojo">
                 <div class="socNetwork-icon flex center ">
                     <i class="fab fa-codepen"></i>
                 </div>             
             </a>
         </div>
         <div class="footnote flex center">
-            Jo Ann Sutojo 
-            <span class="highlight">&copy;2022</span>
+            JoAnn Sutojo 
+            <span class="copyright">&copy;2022</span>
         </div>
     </footer>
 </body>

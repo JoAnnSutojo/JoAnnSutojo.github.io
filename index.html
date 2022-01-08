@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jo Ann Sutojo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,8 @@
 <body>
 
     <!--HOME-->
-
-    <section id="home">
-        <header class="flex center">
+    <header>
+        <div class="container">
             <nav class="navBar">
                 <a href="#home">
                     <div class="logo flex center">JS</div>
@@ -35,87 +35,82 @@
                     </li>
                 </ul>
             </nav>
-        </header>
-        <div class="flex center">
-            <div class="main-container">
-                <div class="mainHeading-frame">
-                    <div class="mainHeading-text">
-                        <h1>Hello.</h1>
-                        <h2>I'm <span>Jo Ann<span></h2>      
-                    </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="showcase">
+                    <h1>Hello.</h1>
+                    <h2>I'm <span>Jo Ann<span></h2>  
+                    <p><span>Full-Stack</span> Web Developer</p> 
+                    <div class="contact-btn flex center">
+                        <a href="#contact">Contact me!</a>
+                    </div>  
                 </div>
-                <div class="secondHeading-container">
-                    <div class="secondHeading-text">
-                        <p>I'm a <span>Full-Stack Web Developer</span>, based in <span>Hamburg</span>.</p>
-                    </div>
-                </div>
-                <div class="contact-btn flex center">
-                    <a href="#contact">Contact me!</a>
-                </div>
-                <div class="flex center">
-                    <svg class="arrows">
-                            <path class="a1" d="M0 0 L20 20 L40 0"></path>
-                            <path class="a2" d="M0 20 L20 40 L40 20"></path>
-                    </svg>  
-                </div>   
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L20 20 L40 0"></path>
+                    <path class="a2" d="M0 20 L20 40 L40 20"></path>
+                </svg>  
             </div>
         </div>
     </section>
 
     <!--ABOUT-->
-
     <section id="about">
-        <div class="flex center">
-            <div class="main-container">
+        <div class="container">
+            <div class="content-wrapper">
                 <h3 class="pageTitle">About Me</h3>
                 <div class="pageTitle-bar"></div>
                 <p class="pageIntro">Hi, i'm Jo Ann. Nice to meet you.</p>
-                <div class="about-container flex center">
+                <div class="aboutMe">
                     <div class="about-photo">
+                        <img src="./Images/about-photo-1.jpeg" alt="">
                     </div>
-                    <p class="about-text">I'm baby viral craft beer banjo locavore, farm-to-table bicycle rights jean shorts. Semiotics ethical before they sold out chartreuse four loko street art, marfa echo park woke venmo. Organic cronut pok pok coloring book listicle aesthetic swag, 8-bit taiyaki chartreuse retro. Banh mi hot chicken roof party put a bird on it pinterest, tote bag poutine meditation taiyaki brunch kitsch dreamcatcher. Food truck art party put a bird on it irony typewriter normcore tacos drinking vinegar 3 wolf moon tumblr meditation. Franzen copper mug gastropub kale chips bitters banjo portland poke you probably haven't heard of them, hot chicken tumeric craft beer. </p>
-                </div>
+                    <div class="about-text">
+                        <p>I'm baby viral craft beer banjo locavore, farm-to-table bicycle rights jean shorts. Semiotics ethical before they sold out chartreuse four loko street art, marfa echo park woke venmo. Organic cronut pok pok coloring book listicle aesthetic swag, 8-bit taiyaki chartreuse retro. Banh mi hot chicken roof party put a bird on it pinterest, tote bag poutine meditation taiyaki brunch kitsch dreamcatcher. Food truck art party put a bird on it irony typewriter normcore tacos drinking vinegar 3 wolf moon tumblr meditation. Food truck art party put a bird on it irony typewriter normcore tacos drinking vinegar 3 wolf moon tumblr meditation.</p>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>
 
-    <!--WORK-->
-
+    <!--PORTFOLIO-->
     <section id="work"> 
-        <div class="flex center">
-            <div class="main-container">
+        <div class="container">
+            <div class="content-wrapper">
                 <h3 class="pageTitle">My Portfolio</h3>
                 <div class="pageTitle-bar black"></div>
                 <p class="pageIntro"> Here are a few projects i've worked on recently.</p>
                 <div class="imgGallery">
                     <div class="img-container img-1">
                         <img src="./Images/travel-page-indonesia.png" alt="">   
-                    </div>
+                        </div>
                     <div class="img-container">
-                        <img src="./Images/bennys-burger.png" alt="">
-                    </div>
+                            <img src="./Images/bennys-burger.png" alt="">
+                        </div>
                     <div class="img-container">
                         <img src="./Images/zoom-session.png" alt="">
-                    </div>
+                        </div>
                     <div class="img-container">
                         <img src="./Images/bootstrap-page.png" alt="">      
-                    </div>
+                        </div>
                     <div class="img-container">
                         <img src="./Images/grid-layout.png" alt="">      
-                    </div>
+                        </div>
                     <div class="img-container">
                         <img src="./Images/warp-club.png" alt="">      
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div> 
+            </div> 
+        </div>
     </section>
 
     <!--CONTACT-->
-
     <section id="contact">
-        <div class="flex center">
-            <div class="main-container">
+        <div class="container">
+            <div class="content-wrapper">
                 <h3 class="pageTitle">Get In Touch</h3>
                 <div class="pageTitle-bar white"></div>
                 <p class="pageIntro highlight">Have a question or want to work together?</p>
@@ -123,22 +118,22 @@
                     <div>
                         <label for="name"></label>
                         <input type="text" name="name" id="name" placeholder="Name" maxlength="100" required>
-                    </div>
+                        </div>
                     <div>
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Enter Email"  required>
-                    </div>
+                        </div>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"  required></textarea>
                     <div class="submit-btn flex">
                         <button  type="submit">Submit</button>
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!--FOOTER-->
-
     <footer class="flex center">
         <a class="scrollUp-btn" href="#">
             <svg class="arrowsUp">
@@ -146,7 +141,39 @@
                 <path class="a3" d="M0 40 L20 20 L40 40"></path>
             </svg>
         </a>
-        <div class="socNet flex center">
+        <ul class="socNet flex center">
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jo-ann-sutojo-67291495/">
+                    <div class=" socNet-icon icon1 flex center">
+                        <i class=" fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/apintofjo/">
+                    <div class="socNet-icon icon2 flex center ">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/apintofjo">
+                    <div class="socNet-icon icon3 flex center">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://codepen.io/joAnnSutojo">
+                    <div class="socNet-icon icon4 flex center ">
+                        <i class="fab fa-codepen"></i>
+                    </div>             
+                </a>
+            </li>
+        </ul>
+
+        <!-- 
+        <div class="socNet flex center"> 
             <a target="_blank" href="https://www.linkedin.com/in/jo-ann-sutojo-67291495/">
                 <div class=" socNet-icon icon1 flex center">
                     <i class=" fab fa-linkedin-in"></i>
@@ -168,6 +195,7 @@
                 </div>             
             </a>
         </div>
+        -->
         <div class="footnote flex center">
             JoAnn Sutojo 
             <span class="copyright">&copy;2022</span>

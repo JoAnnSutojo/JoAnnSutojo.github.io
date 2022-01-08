@@ -1,6 +1,10 @@
 
 /*****MEDIA QUERIES*****/
 @media (min-width: 768px) {
+    .navBar ul li {
+        padding-left: 2.5em;
+    }
+
     h1 {
         font-size: 70px;
     }
@@ -8,8 +12,19 @@
     h2 {
         font-size: 55px
     }
+
+    .showcase {
+        width: 300px;
+    }
+
     .showcase p {
-        font-size: 16px;
+        display: none;
+    }
+
+    .showcase .hidden-text {
+        display: block;
+        font-size: 14px;
+        letter-spacing: 2.2px; 
     }
 
     .pageTitle {
@@ -20,13 +35,6 @@
         font-size: 16px;
     }
 
-    /*
-    .pageTitle-bar {
-        width: 120px;
-        height: 6px;
-    }
-    */
-
     .pageIntro {
         font-size: 20px;
     }
@@ -36,9 +44,12 @@
         grid-template-areas: 
         'img text text';
         align-items: center;
+        margin-bottom: 8em;
     }
 
     .about-photo {
+        width: 300px;
+        height: 350px;
         grid-area: img;
         margin: auto;
     }
@@ -70,124 +81,25 @@
     }  
 }
 
-/* SMALL SCREENS, LAPTOPS */
-/*
-@media (min-width: 769px) {
-    body {
-        font-size: 16px;
+@media (min-width: 1024px) {
+    .showcase {
+        width: 320px;
     }
 
-    .main-container {
-        padding-left:3em;
-        padding-right: 3em;
-    }
-
-    .pageTitle {
-        font-size: 2.5rem;
-        margin-top: 2em;
-    }
-
-    
-    .pageTitle-bar {
-        width: 140px;
-        height: 6px;
-    }
-   
-
-    .pageIntro {
-        font-size: 1.2rem;
-        margin-bottom: 2em;
-    }
-    
-    .navBar {
-        padding-left:3em;
-        padding-right: 3em;
-    }
-    
-    .logo {
-        width: 48px;
-        height: 48px;
-        font-size: 20px;
-    }
-
-    .mainHeading-frame {
-        width: 600px;
-        height: 320px;
-        margin-top: 3em;
-    }
-
-    .mainHeading-frame::after {
-        width: 200px;
-        height: 200px;
-        bottom: -40px;
-        right: -119px;
-    }
-
-    .mainHeading-text {
-        left: -120px;
-    }
-    
     h1 {
         font-size: 80px;
     }
 
     h2 {
-        font-size: 40px
+        font-size: 60px
     }
 
-    .secondHeading-container {
-        width: 600px;
-    }
-
-    .secondHeading-text {
-        font-size: 14px;
-        bottom: -15px;
-    }
-
-    .contact-btn {
-        width: 140px;
+    .pageTitle {
+        font-size: 3rem;
     }
 
     .about-text {
-        margin-top: 6em;
-    }
-
-
-    #work .main-container {
-        padding-left:0;
-        padding-right: 0;
-    }
-
-    .imgGallery {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .img-1 {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    .img-container::before {
-        width: 150px;
-        height: 150px;
-        top: 50%;
-        left: 50%;
-        margin-left: -75px;
-        margin-top: -75px;
-        font-size: 20px;
-    }
-
-    form {
-        width: 80%;
-    }
-
-    input, textarea {
-        font-size: 16px;
-    }
-    
-    footer {
-        height: 30vh;
+        line-height: 2;
     }
 }
- */
+

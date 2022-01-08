@@ -28,9 +28,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--white);
-    /*
-    line-height: 1.5;
-    */
 }
 
 ul {
@@ -40,18 +37,8 @@ ul {
 a {
     text-decoration: none;
     color: var(--white);
-
 }
 
-#home, #work {
-    background-color: var(--jet);
-}
-
-#about, #contact {
-    background-color: var(--eerie-black);
-}
-
-/**********/
 body {
     width: 100%;
 }
@@ -59,6 +46,11 @@ body {
 section {
     width: 100%;
     min-height: 100vh;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container {
@@ -73,7 +65,7 @@ section {
     padding: 0 2em;
 }
 
-/*FLEX*/
+/* centering */
 .flex {
     display: flex;
 }
@@ -81,6 +73,15 @@ section {
 .center {
     justify-content: center;
     align-items: center;
+}
+
+/* bg-color */
+#home, #work {
+    background-color: var(--jet);
+}
+
+#about, #contact {
+    background-color: var(--eerie-black);
 }
 
 /***** HEADER *****/
@@ -134,9 +135,6 @@ header {
 
 /***** HOME *****/
 #home {
-    /*
-    min-height: 100vh;
-    */
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -160,6 +158,7 @@ header {
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
+    width: 240px;
 }
 
 h1 {
@@ -181,25 +180,74 @@ h2 {
     letter-spacing: 2.2px;
 }
 
+.hidden-text {
+    display: none; 
+}
+
 span {
     font-weight: 800;
     color: var(--aureolin);
 }
 
+/* Showcase Animation */
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+
+@keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+
+  .text-top, .text-bottom {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .text-top div, .text-bottom div {
+    position: absolute;
+  }
+
+  h1, h2 {
+    display: block;
+  }
+
+  .text-top {
+    border-bottom: 1px solid var(--aureolin);
+    top: 0;
+  }
+
+  .text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+
+  .text-bottom {
+    bottom: 0;
+  }
+
+  .text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }
+
+/* contact-me button */
 .contact-btn {
     font-size: 14px;
     width: 140px;
     height: 40px;
-    margin: 4em 0;
-    padding: 0.75em;
+    margin-top: 22em;
     border: 1px solid var(--aureolin);
-    
-    /*
-    background: linear-gradient(to right, var(--aureolin)50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
-    */
     transition: .6s ease;
 }
 
@@ -207,36 +255,18 @@ span {
     cursor: pointer;
     background-color: var(--aureolin);
     box-shadow: 0 0 5px var(--aureolin), 0 0 10px var(--aureolin);
-    /*
-    background-position: left bottom;
-    */
 }
 
 .contact-btn a {
     color: var(--aureolin);
+    z-index: 1;
 }
 
 .contact-btn a:hover {
     color: var(--white);
 }
 
-/* SCROLL-DOWN */
-.arrows {
-    width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 50%;
-	margin-left: -20px;
-	bottom: 10px;
-}
-
-.arrows path {
-	stroke: var(--cyber-yellow);
-	fill: transparent;
-	stroke-width: 1px;	
-	animation: arrows 2s infinite;
-}
-
+/* scroll-down arrows animation */
 @keyframes arrows
 {
 0% {opacity:0}
@@ -251,6 +281,22 @@ span {
 
 .arrows path.a2 {	
 	animation-delay:0s;
+}
+
+.arrows {
+    width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	bottom: 10px;
+}
+
+.arrows path {
+	stroke: var(--cyber-yellow);
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrows 2s infinite;
 }
 
 /***** ABOUT *****/
@@ -279,10 +325,10 @@ span {
 }
 
 .about-photo {
-    width: 300px;
+    width: 350px;
     height: 300px;
-    border-radius: 50%;
     background-color: rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px var(--cyber-yellow);
 }
 
 .about-photo img {
@@ -290,26 +336,15 @@ span {
     height: 100%;
     object-fit: cover;
     object-position: top;
-    border-radius: 50%;
     z-index: -1;
     opacity: .8;
 }
 
-/*
-.about-photo {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background-image: url(./Images/about-photo-1.jpeg);
-    background-size: cover;
-    background-position: top;
-}
-*/
-
 .about-text {
     font-size: 14px;
     font-weight: 400;
-    line-height: 2em;
+    line-height: 1.6;
+    letter-spacing: 2px;
     text-align: justify;
     margin-top: 3em; 
     margin-bottom: 8em;
@@ -317,9 +352,6 @@ span {
 
 /***** PORTFOLIO *****/
 .imgGallery {
-    /*
-    height: 640px;
-    */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5rem;

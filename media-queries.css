@@ -45,19 +45,33 @@
         'img text text';
         align-items: center;
         margin-bottom: 8em;
+
     }
 
     .about-photo {
-        width: 300px;
-        height: 350px;
+        width: 240px;
+        height: auto;
         grid-area: img;
         margin: auto;
+        /*
+        background-color: var(--jet);
+        padding: 1em;
+        box-shadow: 0 0 15px var(--cyber-yellow);
+        */
     }
+
+    /*
+    .about-photo img {
+        box-shadow: 0 0 5px var(--cyber-yellow);
+    }
+    */
 
     .about-text {
         grid-area: text;
         margin: auto;
         padding: 0 2em;
+        background-color: var(--jet);
+        padding: 1.5em;
     }
 
     .imgGallery {

@@ -49,27 +49,17 @@
     }
 
     .about-photo {
-        width: 240px;
+        /*
+        width: 100%;
         height: auto;
+        */
         grid-area: img;
         margin: auto;
-        /*
-        background-color: var(--jet);
-        padding: 1em;
-        box-shadow: 0 0 15px var(--cyber-yellow);
-        */
     }
-
-    /*
-    .about-photo img {
-        box-shadow: 0 0 5px var(--cyber-yellow);
-    }
-    */
 
     .about-text {
         grid-area: text;
         margin: auto;
-        padding: 0 2em;
         background-color: var(--jet);
         padding: 1.5em;
     }
@@ -117,3 +107,8 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .showcase {
+        left: 21%;
+    }
+}

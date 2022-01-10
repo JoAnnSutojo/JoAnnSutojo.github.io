@@ -1,24 +1,23 @@
 /***** VARIABLES *****/
 :root {
-    /***** COLOR *****/
+    /* Colors */
     --cyber-yellow: #ffd100;
     --aureolin: #ffee32;
     --white: #ffffff;
     --light-gray: #d6d6d6;
     --jet: #333533;
     --eerie-black: #202020;
-    /***** FONT *****/
+    /* Font */
     --heading-font: 'Montserrat', sans-serif;
 }
 
-/***** RESET *****/
+/***** RESET/DEFAULT SETUP *****/
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/***** UTILITY *****/
 html {
     scroll-behavior: smooth;
 }
@@ -48,6 +47,16 @@ section {
     min-height: 100vh;
 }
 
+/* bg-colors */
+#home, #work {
+    background-color: var(--jet);
+}
+
+#about, #contact {
+    background-color: var(--eerie-black);
+}
+
+/***** UTILITY *****/
 .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -68,15 +77,6 @@ section {
 .center {
     justify-content: center;
     align-items: center;
-}
-
-/* bg-color */
-#home, #work {
-    background-color: var(--jet);
-}
-
-#about, #contact {
-    background-color: var(--eerie-black);
 }
 
 /***** HEADER *****/

@@ -337,7 +337,7 @@ h1, h2 {
 }
 
 .pageIntro {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--aureolin);
     margin-bottom: 4em;
 }
@@ -378,7 +378,9 @@ h1, h2 {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /*
     grid-gap: 0.3rem;
+    */
     margin-bottom: 6em;
 }
 

@@ -337,7 +337,10 @@ h1, h2 {
 }
 
 .pageIntro {
-    font-size: 14px;
+    /*
+    font-size: 18px;
+    */
+    text-align: center;
     color: var(--aureolin);
     margin-bottom: 4em;
 }

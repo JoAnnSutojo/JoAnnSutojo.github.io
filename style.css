@@ -101,7 +101,6 @@ header {
 .navBar {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 1em;
 }
 
@@ -134,7 +133,6 @@ header {
 
 .navBar ul li {
     font-family: var(--heading-font);
-    /* padding-left: 1em; */
 }
 
 .navBar ul li a {
@@ -162,11 +160,11 @@ header {
     width: 32px;
     height: 32px;
     font-size: 20px;
-    color: var(--light-gray);
+    color: var(--cyber-yellow);
     background: transparent;
-    border: var(--light-gray) solid 1px;
+    border: solid 1px var(--cyber-yellow);
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0); 
-    outline: 1px solid var(--light-gray); 
+    outline: 1px solid var(--cyber-yellow); 
     outline-color: rgba(255, 255, 255, .5);  
     outline-offset: 0px; 
     text-shadow: none;
@@ -180,7 +178,7 @@ header {
     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px var(--light-gray); 
+    text-shadow: 1px 1px 2px var(--cyber-yellow); 
 }
 
 .hamburger .closeIcon{
@@ -199,8 +197,6 @@ header {
     background: var(--eerie-black);
     opacity: .95;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 3.5rem;
     font-size: 28px;
 }
@@ -228,22 +224,16 @@ header {
     z-index: -1;
     opacity: .8;
 }
+
 .showcase-wrapper {
     position: relative;
     width: 100%; 
-    /* width: 1024px;  */
 }
 
 .showcase {
     position: absolute;
-    /* width: 100%; */
-    /* top: 50%;
-    left: 8%; 
-    left: 1em; */
     top: 0;
-    /* left: 0; */
     left: 0;
-    
     transform: translateY(50%);
     width: 240px;
 }
@@ -388,29 +378,27 @@ h1, h2 {
 	animation: arrows 2s infinite;
 }
 
-/***** ABOUT *****/
+/***** PAGE TITLES/INTROS *****/
 .pageTitle {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .pageTitle-bar {
     width: 80px;
     height: 4px;
     background-color: var(--white);
-    margin: 1em 0 4em 0;
+    margin: 1em 0 2em 0;
 }
 
 .pageIntro {
-    /*
-    font-size: 18px;
-    */
     text-align: center;
     color: var(--aureolin);
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
+/***** ABOUT *****/
 .aboutMe {
     display: grid;
     justify-items: center;
@@ -419,13 +407,15 @@ h1, h2 {
 .about-photo {
     width: 250px;
     height: 250px;
-    background-color: rgba(0,0,0,0.4);
-    box-shadow: 0 0 6px var(--cyber-yellow);
+    border-radius: 50%;
+    /* background-color: rgba(0,0,0,0.4); */
+    box-shadow: 0 0 2px var(--light-gray);
 }
 
 .about-photo img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: center;
     z-index: -1;
@@ -438,8 +428,60 @@ h1, h2 {
     line-height: 1.6;
     letter-spacing: 2px;
     text-align: justify;
-    margin-top: 3em; 
-    margin-bottom: 6em;
+    margin: 3em 0;
+}
+
+.skills-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    row-gap: 10px;
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.skill-name {
+    font-size: 10px;
+    font-weight: 100;
+    color: var(--light-gray);
+}
+
+.js-icon {
+    color: #f7df1e;
+}
+
+.react-icon {
+    color:  #61DBFB;
+}
+
+.node-icon {
+    color: #3c873a;
+}
+
+.html-icon {
+    color: #e34c26;
+}
+
+.css-icon {
+    color: #264de4;
+}
+
+.sass-icon {
+    color: #cd6799;
+}
+
+.bootstrap-icon {
+    color: #563d7c;
+}
+
+.styledComponents-logo {
+    width: 28px;
+    display: inline;
+}
+
+.database-icon {
+    color:#4db33d;
 }
 
 /***** PORTFOLIO *****/

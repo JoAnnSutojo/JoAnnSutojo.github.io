@@ -1,14 +1,6 @@
 /*****MEDIA QUERIES*****/
 
 @media (min-width: 568px) {
-    /* .content-wrapper {
-        padding: 0 2em;
-    } */
-
-    /* .navBar {
-        padding: 1.5rem 2.25rem;
-    } */
-
     .navBar ul li {
         padding-left: 1.5rem;
     }
@@ -27,21 +19,8 @@
         display: none;
     }
 
-    /* h1 {
-        font-size: 70px;
-    }
-
-    h2 {
-        font-size: 50px
-    } */
-
-    /* .showcase-wrapper {
-        width: 90%;
-    } */
-
     .showcase {
         width: 240px;
-        /* left: 2em; */
     }
 
     .showcase p {
@@ -64,26 +43,6 @@
 
     .pageIntro {
         font-size: 20px;
-    }
-
-    .aboutMe {
-        grid-gap: 2rem;
-        grid-template-areas: 
-        'img text text';
-        align-items: center;
-        margin-bottom: 8em;
-    }
-
-    .about-photo {
-        grid-area: img;
-        margin: auto;
-    }
-
-    .about-text {
-        grid-area: text;
-        margin: auto;
-        background-color: var(--jet);
-        padding: 1.5em;
     }
 
     .imgGallery {
@@ -114,6 +73,33 @@
     .navBar ul li {
         padding-left: 2.5rem;
     }
+
+    .aboutMe {
+        grid-gap: 10px;
+        grid-template-areas: 
+        'img text text';
+        margin-bottom: 3em;
+    }
+
+    .about-photo {
+        grid-area: img;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    
+    .about-photo img {
+        border-radius: 0;
+        object-fit: contain;
+    }
+
+    .about-text {
+        grid-area: text;
+        margin: auto;
+        background-color: var(--jet);
+        padding: 0.8em;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -138,8 +124,3 @@
     }
 }
 
-@media (min-width: 1200px) {
-    /* .showcase {
-        left: 21%;
-    } */
-}

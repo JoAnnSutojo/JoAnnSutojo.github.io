@@ -1,3 +1,4 @@
+// Hamburger Menu
 const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
@@ -20,3 +21,4 @@ hamburger.addEventListener('click', toggleMenu);
 
 menuItems.forEach( (i) => i.addEventListener('click', toggleMenu)
 );
+

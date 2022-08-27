@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Jo Ann Sutojo</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
     
@@ -20,18 +22,16 @@
     <header>
         <div class="container md">
             <nav class="navBar">
-                <a href="#home" class="logo flex center">JS</a>
-                <ul class="flex">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+                <a href="#home" class="logo flex center">JAS</a>
+                <ul class="menu">
+                    <li> <a class="menuItem" href="#about">About</a></li>
+                    <li><a class="menuItem" href="#work">Work</a></li>
+                    <li><a class="menuItem" href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger">
+                    <i class="fa fa-bars menuIcon"></i>
+                    <i class="fa fa-close closeIcon"></i>
+                </button>
             </nav>
         </div>
     </header>
@@ -74,7 +74,7 @@
                 <p class="pageIntro">Hi, i'm Jo Ann. Nice to meet you.</p>
                 <div class="aboutMe">
                     <div class="about-photo">
-                        <img src="./Images/about-photo_1.JPG" alt="">
+                        <img src="./Images/about-me-portrait.jpg" alt="">
                     </div>
                     <div class="about-text">
                         <p>I'm baby viral craft beer banjo locavore, farm-to-table bicycle rights jean shorts. Semiotics ethical before they sold out chartreuse four loko street art, marfa echo park woke venmo. Organic cronut pok pok coloring book listicle aesthetic swag, 8-bit taiyaki chartreuse retro. Banh mi hot chicken roof party put a bird on it pinterest, tote bag poutine meditation taiyaki brunch kitsch dreamcatcher. Food truck art party put a bird on it irony typewriter normcore tacos drinking vinegar 3 wolf moon tumblr meditation. Food truck art party put a bird on it irony typewriter normcore tacos drinking vinegar 3 wolf moon tumblr meditation.</p>
@@ -213,5 +213,6 @@
             <span class="copyright">&copy;2022</span>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

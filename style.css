@@ -58,7 +58,6 @@ section {
 
 /***** UTILITY *****/
 .container {
-    
     margin: 0 auto;
 }
 
@@ -102,7 +101,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 1em;
+    padding: 1rem;
 }
 
 .logo {
@@ -155,6 +154,40 @@ header {
     background-color: var(--white);
 }
 
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: var(--jet);
+    opacity: .9;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.navBar .hamburger {
+    padding: 8px 12px;
+    font-size: 20px;
+    border: var(--light-gray) solid 2px;
+    color: var(--light-gray);
+    background: transparent;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger .closeIcon{
+    display: none;
+}
+
 /***** HOME *****/
 #home {
     background-color: rgba(0,0,0,0.4);
@@ -165,7 +198,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    background: url(./Images/home-photo_edited.png);
+    background: url(./Images/my-pic-landscape_2-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

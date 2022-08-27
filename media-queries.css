@@ -1,12 +1,32 @@
 
 /*****MEDIA QUERIES*****/
-@media (min-width: 768px) {
+/* (min-width: 768px) */
+
+@media (min-width: 720px) {
     .content-wrapper {
         padding: 0 2em;
     }
 
+    .navBar {
+        padding: 1.5rem 2.25rem;
+    }
+
     .navBar ul li {
         padding-left: 2.5em;
+    }
+
+    .navBar .menu {
+        position: relative;
+        transform: none;
+        background: transparent;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0;
+        font-size: 18px
+    }
+
+    .hamburger {
+        display: none;
     }
 
     h1 {

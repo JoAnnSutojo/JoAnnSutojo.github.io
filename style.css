@@ -333,7 +333,8 @@ h1, h2 {
 .contact-btn:hover {
     cursor: pointer;
     background-color: var(--aureolin);
-    box-shadow: 0 0 5px var(--aureolin), 0 0 10px var(--aureolin);
+    /* box-shadow: 0 0 5px var(--aureolin), 0 0 10px var(--aureolin); */
+    box-shadow: 0 0 5px var(--aureolin);
 }
 
 .contact-btn a {
@@ -382,13 +383,13 @@ h1, h2 {
 .pageTitle {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .pageTitle-bar {
-    width: 80px;
+    /* width: 80px;
     height: 4px;
-    background-color: var(--white);
+    background-color: var(--white); */
     margin: 1em 0 2em 0;
 }
 
@@ -423,64 +424,86 @@ h1, h2 {
 }
 
 .about-text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 1px;
     text-align: justify;
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
-.skills-list {
+/* .skills-list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     row-gap: 10px;
     font-size: 2rem;
     margin-bottom: 1em;
+} */
+
+.skills-list {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
-.skill-name {
+.skills-list ul {
+    /* width: 100%; */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.skills-list ul > li {
     font-size: 10px;
-    font-weight: 100;
-    color: var(--light-gray);
+    /* width: 100%;
+    height: 100%; */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
 }
 
-.js-icon {
+.skills-list ul > li > i {
+    font-size: 2rem;
+}
+
+.javascript {
     color: #f7df1e;
 }
 
-.react-icon {
+.react {
     color:  #61DBFB;
 }
 
-.node-icon {
-    color: #3c873a;
-}
-
-.html-icon {
+.html {
     color: #e34c26;
 }
 
-.css-icon {
+.css {
     color: #264de4;
 }
 
-.sass-icon {
+.sass {
     color: #cd6799;
 }
 
-.bootstrap-icon {
+.bootstrap {
     color: #563d7c;
 }
 
-.styledComponents-logo {
+.styledComponents {
     width: 28px;
     display: inline;
 }
 
-.database-icon {
+.nodeJS {
+    color: #3c873a;
+}
+
+.mongoDB {
     color:#4db33d;
 }
 
@@ -488,23 +511,31 @@ h1, h2 {
 .imgGallery {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
     /*
     grid-gap: 0.3rem;
     */
-    margin-bottom: 6em;
+    margin-bottom: 3em;
 }
 
 .img-container {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
 }
+
+/* .img-container a {
+    cursor: pointer;
+} */
 
 .img-container::before, .img-container::after {
     position: absolute;
@@ -512,32 +543,33 @@ h1, h2 {
 
 .img-container::before {
     content: 'View Project';
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     padding: 1em;
     border-radius: 50%;
     background-color: var(--cyber-yellow);
     color: var(--jet);
     text-transform: uppercase;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     top: 50%;
     left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
+    margin-left: -40px;
+    margin-top: -40px;
     opacity: 0;
     z-index: 1;
 }
 
-.img-container::after {
+/* .img-container::after {
     content: '';
     width: 100%; 
     height: 100%;
     top: 0; left:0;
     background:rgba(0,0,0,0.6);
-}
+} */
 
 .img-container:hover img {
     transform: scale(1.5);
@@ -548,12 +580,17 @@ h1, h2 {
 }
 
 .img-container:hover::after {
-    opacity: 0;
+    /* opacity: 0; */
+    content: '';
+    width: 100%; 
+    height: 100%;
+    top: 0; left:0;
+    background:rgba(0,0,0,0.6);
 }
 
 /***** CONTACT *****/
 form {
-    margin-bottom: 6em;
+    margin-bottom: 2em;
 }
 input {
     display: block;
@@ -582,7 +619,7 @@ input, textarea {
 }
 
 button[type='submit'] {
-    width: 80px;
+    width: 140px;
     height: 45px;
     color: var(--white);
     border: 2px solid var(--white);
@@ -590,11 +627,10 @@ button[type='submit'] {
     padding: 1em;
     margin-top: 0.5em;
     cursor: pointer;
-
     background: linear-gradient(to right, var(--white)50%, var(--jet)50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
 }
 
 button[type='submit']:hover {

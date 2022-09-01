@@ -1,6 +1,10 @@
 /*****MEDIA QUERIES*****/
 
 @media (min-width: 568px) {
+    .logo {
+        font-size: 26px;
+    }
+
     .navBar ul li {
         padding-left: 1.5rem;
     }
@@ -10,7 +14,7 @@
         transform: none;
         background: transparent;
         flex-direction: row;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
         gap: 0;
         font-size: 14px
     }
@@ -33,9 +37,9 @@
         letter-spacing: 2.2px; 
     }
 
-    .pageTitle {
-        font-size: 2rem;
-    }
+    /* .pageTitle {
+        font-size: 2.5rem;
+    } */
 
     input, textarea {
         font-size: 16px;
@@ -78,11 +82,19 @@
         padding-left: 2.5rem;
     }
 
+    .pageTitle {
+        font-size: 2.5rem;
+    }
+
+    .pageIntro {
+        font-size: 16px;
+    }
+
     .aboutMe {
         grid-gap: 20px;
         grid-template-areas: 
         'img text text';
-        margin-bottom: 3em;
+        margin: 2em 0;
     }
 
     .about-photo {
@@ -103,8 +115,13 @@
         margin: auto;
         height: 100%;
         color: var(--white);
-        /* background-color: var(--jet); */
-        /* padding: 0.8em; */
+        padding: 1em;
+        justify-content: space-evenly;
+        gap: 1em; 
+    }
+
+    .about-text > .text-conta > h3 {
+        display: block;
     }
 
     .skills-list ul {
@@ -113,6 +130,14 @@
 }
 
 @media (min-width: 1024px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .menu {
+        font-size: 16px;
+    }
+
     .showcase {
         width: 280px;
     }

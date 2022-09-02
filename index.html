@@ -12,7 +12,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;700;800&family=Dosis:wght@300;400;500;600;700;800&family=Titillium+Web:wght@300;400;600;700;900&family=Roboto+Condensed:wght@700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Cabin&family=Oswald:wght@200;300;400;500;600;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/ecf64c41dd.js" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +22,14 @@
     <header>
         <div class="container sm">
             <nav class="navBar flex center">
-                <a href="#home" class="logo flex center">JS</a>
+                <!-- <a href="#home" class="logo flex center">JS</a> -->
+                <a href="#home">
+                    <div class="logo flex center">
+                        <span>j</span>
+                        <span>s</span>
+                    </div>
+                   
+                </a>
                 <ul class="menu flex center">
                      <li> <a  href="#about">About</a></li>
                      <li><a href="#work">Work</a></li>
@@ -41,7 +48,7 @@
                 <div class="showcase-wrapper">
                     <div class="showcase">
                         <div class="text-top">
-                            <div>
+                            <div class="text-top-wrapper">
                                 <h1>Hello.</h1>
                                 <h2>I'm <span>Jo Ann<span></h2>
                             </div>
@@ -49,7 +56,6 @@
                         <div class="text-bottom">
                             <div>
                                 <p><span>Full-Stack</span> Web Developer</p>
-                                <!-- <p class="hidden-text">I'm a <span>Full-Stack</span> Web Developer, <br> based in <span>Hamburg</span>.</p>  -->
                                 <p class="hidden-text"><span>Full-Stack</span> Web Developer, <br> based in <span>Hamburg</span>.</p> 
                             </div>
                         </div>
@@ -106,14 +112,14 @@
                             <i class="fab fa-react react"></i>
                             React
                         </li>
-                        <!-- <li>
+                        <li class="hidden-skill">
                             <i class="fab fa-html5 html"></i>
                             HTML
                         </li>
-                        <li>
+                        <li class="hidden-skill">
                             <i class="fab fa-css3 css"></i>
                             CSS
-                        </li> -->
+                        </li>
                         <li>
                             <i class="fab fa-sass sass"></i>
                             Sass
@@ -122,18 +128,18 @@
                             <i class="fab fa-bootstrap bootstrap"></i>
                             Bootstrap
                         </li>
-                        <!-- <li>
+                        <li class="hidden-skill">
                             <img src="./Images/Badge_styled-components_2.png" class="styledComponents"></img>
                             styled-components
-                        </li> -->
+                        </li>
                         <li>
                             <i class="fab fa-node-js nodeJS"></i>
                             Node.JS
                         </li>
-                        <!-- <li>
+                        <li class="hidden-skill">
                             <i class="fa fa-server expressJS"></i>
                            Express.JS
-                        </li> -->
+                        </li>
                         <li>
                             <i class="fa fa-database mongoDB"></i>
                             MongoDB
@@ -254,31 +260,6 @@
                 </a>
             </li>
         </ul>
-
-        <!-- 
-        <div class="socNet flex center"> 
-            <a target="_blank" href="https://www.linkedin.com/in/jo-ann-sutojo-67291495/">
-                <div class=" socNet-icon icon1 flex center">
-                    <i class=" fab fa-linkedin-in"></i>
-                </div>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/apintofjo/">
-                <div class="socNet-icon icon2 flex center ">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </div>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/apintofjo">
-                <div class="socNet-icon icon3 flex center">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-            </a>
-            <a target="_blank" href="https://codepen.io/joAnnSutojo">
-                <div class="socNet-icon icon4 flex center ">
-                    <i class="fab fa-codepen"></i>
-                </div>             
-            </a>
-        </div>
-        -->
         <div class="footnote flex center">
             JoAnn Sutojo
             <span class="copyright">&copy;2022</span>

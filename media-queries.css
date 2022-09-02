@@ -46,8 +46,8 @@
     }
 
     .pageIntro {
-        font-size: 20px;
-    }
+        font-size: 14px;
+    } 
 
     .skills-list ul {
         grid-template-columns: repeat(3, 1fr);
@@ -86,9 +86,9 @@
         font-size: 2.5rem;
     }
 
-    .pageIntro {
-        font-size: 16px;
-    }
+    /* .pageIntro {
+        font-size: 10px;
+    } */
 
     .aboutMe {
         grid-gap: 20px;
@@ -125,7 +125,13 @@
     }
 
     .skills-list ul {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .skills-list ul > .hidden-skill {
+        display: block;
+        display: flex;
+        justify-content: center;
     }
 }
 

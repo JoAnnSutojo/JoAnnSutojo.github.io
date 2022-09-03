@@ -8,8 +8,8 @@
     --jet: #333533;
     --eerie-black: #202020;
     /* Font */
-    /* --heading-font: 'Montserrat', sans-serif; */
     --heading-font: 'Open Sans', sans-serif;
+    --text-font: 'Montserrat', sans-serif;
 }
 
 /***** RESET/DEFAULT SETUP *****/
@@ -24,9 +24,9 @@ html {
 }
 
 body {
-    font-family: 'Cabin', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 300;
     color: var(--white);
 }
 
@@ -63,7 +63,6 @@ section {
 }
 
 .sm {
-    /* max-width: 800px; */
     max-width: 768px;
 }
 
@@ -105,41 +104,35 @@ header {
     padding: 1em;
 }
 
-/* .logo {
-    font-size: 24px;
-    font-weight: 600;
-    padding: 0.25em;
-    color: var(--light-gray);
-    background-color: transparent;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); 
-}
-
-.logo:hover {
-    text-shadow: 1px 1px 2px var(--light-gray); 
-} */
-
 .logo > span {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 600;
     display: inline-block;
     text-transform: uppercase;
 }
 
 .logo > span:hover {
     cursor: pointer;    
-    animation: bounce 0.8s ease-in infinite;
-    animation-delay:0.2s;
+    animation: flip 1.5s ease-in-out infinite;
+    animation-delay:0s;
 }
 
-@keyframes bounce{
-    0%,40%,100% {
+@keyframes flip{
+    /* 0%,40%,100% {
         transform: translateY(0)
       }
       20% {
         transform: translateY(-20px)
-    }
+    } */
+
+    0%,80% {
+        transform: rotateY(360deg) 
+      }
 }
 
 .navBar ul li {
-    font-family: var(--heading-font);
+    font-family: var(--text-font);
 }
 
 .navBar ul li a {
@@ -245,8 +238,6 @@ header {
     width: 240px;
 }
 
-
-
 h1 {
     font-family: var(--heading-font); 
     font-weight: 800;
@@ -256,15 +247,14 @@ h1 {
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-family: var(--text-font);
+    font-size: 44px;
     font-weight: 200;  
     letter-spacing: 0.5px;
 }
 
 .showcase p {
     margin: 2em 0;
-    font-size: 14px;
     letter-spacing: 2.2px;
 }
 
@@ -345,7 +335,7 @@ h1, h2 {
 .contact-btn:hover {
     cursor: pointer;
     background-color: var(--aureolin);
-    /* box-shadow: 0 0 5px var(--aureolin), 0 0 10px var(--aureolin); */
+    box-shadow: 0 0 5px var(--aureolin), 0 0 10px var(--aureolin);
     box-shadow: 0 0 5px var(--aureolin);
 }
 
@@ -356,6 +346,7 @@ h1, h2 {
 
 .contact-btn a:hover {
     color: var(--jet);
+    font-weight: 400;
 }
 
 /* scroll-down animation */

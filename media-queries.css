@@ -1,10 +1,6 @@
 /*****MEDIA QUERIES*****/
 
 @media (min-width: 568px) {
-    .logo {
-        font-size: 26px;
-    }
-
     .navBar ul li {
         padding-left: 1.5rem;
     }
@@ -14,9 +10,8 @@
         transform: none;
         background: transparent;
         flex-direction: row;
-        /* justify-content: flex-start; */
         gap: 0;
-        font-size: 14px
+        font-size: 16px;
     }
 
     .hamburger {
@@ -33,7 +28,6 @@
 
     .showcase .hidden-text {
         display: block;
-        font-size: 13px;
         letter-spacing: 2.2px; 
     }
 
@@ -136,8 +130,8 @@
 }
 
 @media (min-width: 1024px) {
-    .logo {
-        font-size: 30px;
+    .logo > span {
+        font-size: 32px;
     }
 
     .menu {
@@ -145,15 +139,19 @@
     }
 
     .showcase {
-        width: 280px;
+        width: 276px;
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 71px;
     }
 
     h2 {
-        font-size: 50px
+        font-size: 51px
+    }
+
+    .contact-btn a {
+        font-size: 16px;
     }
 
     .pageTitle {

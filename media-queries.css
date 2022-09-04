@@ -72,8 +72,12 @@
         font-size: 2.5rem;
     }
 
+    .pageTitle-bar {
+        width: 120px;
+    } 
+
     .aboutMe {
-        grid-gap: 10px;
+        grid-gap: 20px;
         grid-template-areas: 
         'img text text';
         margin: 1em 0;
@@ -145,6 +149,10 @@
     .pageTitle {
         font-size: 3rem;
     }
+
+    .pageTitle-bar {
+        width: 160px;
+    } 
 
     .pageIntro {
         font-size: 18px;
